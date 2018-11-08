@@ -24,24 +24,8 @@ class Solution {
       int x=0;
       x=Math.abs(month_margin-7)-1;
       System.out.println(x);
-      switch (x) {
-      case 0 : first_day=day[0];
-                   break;
-      case 1 : first_day=day[1];
-                   break;
-      case 2 : first_day=day[2];
-                   break;
-      case 3 : first_day=day[3];
-                break;
-      case 4 : first_day=day[4];
-                 break;
-      case 5 : first_day=day[5];
-                 break;
-      default : first_day=day[6];
-                   break;
-      }
-      System.out.println(first_day);
       
+      answer=day[b%7+x];
       return answer;
   }
 }
